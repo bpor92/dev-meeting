@@ -49,7 +49,7 @@ const person = {
         "picture": {
           "large": "https://randomuser.me/api/portraits/men/65.jpg",
           "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/61.jpg"
         },
         "nat": "NO"
       },
@@ -102,7 +102,7 @@ const person = {
         "picture": {
           "large": "https://randomuser.me/api/portraits/men/65.jpg",
           "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/62.jpg"
         },
         "nat": "NO"
       },
@@ -155,7 +155,7 @@ const person = {
         "picture": {
           "large": "https://randomuser.me/api/portraits/men/65.jpg",
           "medium": "https://randomuser.me/api/portraits/med/men/65.jpg",
-          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/65.jpg"
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/63.jpg"
         },
         "nat": "NO"
       },

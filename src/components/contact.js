@@ -18,6 +18,7 @@ function Contact(props) {
             <span>{first}</span>
             <span>{phone}</span>
             <span>{email}</span>
+            
         </div>
     )
 }

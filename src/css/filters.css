@@ -1,0 +1,7 @@
+.filters > span {
+    padding: 0px 10px;
+}
+
+.filters .active {
+    font-weight: bold
+}

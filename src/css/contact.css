@@ -10,3 +10,7 @@
     content: "\2605";
     float: right;
  }
+
+ .favourite {
+     background-color: coral;
+ }
