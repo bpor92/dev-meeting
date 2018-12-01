@@ -1,3 +1,12 @@
-.contact > span {
-    display: 'block'
+.contact {
+    padding: 10px;
 }
+.contact > span{
+    font-size: 20px;
+    display: block;
+}
+
+.rating:before {
+    content: "\2605";
+    float: right;
+ }
