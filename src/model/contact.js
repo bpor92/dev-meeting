@@ -160,12 +160,14 @@ const person = {
         "nat": "NO"
       },
     ],
-    "info": {
-      "seed": "2da87e9305069f1d",
-      "results": 1,
-      "page": 1,
-      "version": "1.2"
+    all() {
+      return this.results;
+    },
+    get(id) {
+      const contact = p => p.login.uuid === id
+      return this.results.find(contact);
     }
+
   }
 
   export default person;

@@ -1,8 +1,7 @@
 import React from 'react'
-import Contact from './contact'
+import Contact from './contacts-item'
 
 function ContactsList (props) {
-
 
     const contactsList = props.items
         .filter(item => item.name.first.toLowerCase().includes(props.search.toLowerCase()))
@@ -14,6 +13,7 @@ function ContactsList (props) {
                 click={() => props.toggleFavourite(item.login.uuid)}
             />
         )
+
     return (
         <div>
             {contactsList}
