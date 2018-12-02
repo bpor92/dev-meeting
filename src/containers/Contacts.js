@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import Contact from '../components/contact'
+import ContactsList from '../components/contacts-list'
+import FavouriteList from '../components/favourite-list'
 import Filters from '../components/filters'
 import model from '../model/contact'
 
@@ -43,27 +44,6 @@ class Contacts extends Component {
         return this.state.sort === 'asc' ? a.name.first.localeCompare(b.name.first) : b.name.first.localeCompare(a.name.first);
     }
 
-    allContacts = () => this.state.allContacts
-        .filter(item => item.name.first.toLowerCase().includes(this.state.search.toLowerCase()))
-        .sort((a, b) => this.sortContacts(a,b))
-        .map((item) => 
-            <Contact 
-                key={item.login.uuid}
-                person={item}
-                click={() => this.toggleFavourite(item.login.uuid)}
-            />
-        )
-
-    favouriteContacts = () => this.state.allContacts
-        .filter(item => item.favourite)
-        .map((item) => 
-            <Contact 
-                key={item.login.uuid}
-                person={item}
-                click={() => this.toggleFavourite(item.login.uuid)}
-            />
-        )
-
     render() {
         return (
             <div>
@@ -74,12 +54,18 @@ class Contacts extends Component {
                     setSort={this.setSort}
                 />
 
-                {this.allContacts()}
+                <ContactsList 
+                    items={this.state.allContacts}
+                    search={this.state.search}
+                    sort={this.state.sort}
+                    toggleFavourite={this.toggleFavourite}
+                    sortContacts={this.sortContacts}
+                />
 
-                FAVOURITE:
-                <div className="favourite">
-                    {this.favouriteContacts()}
-                </div>
+                <FavouriteList
+                    items={this.state.allContacts}
+                    toggleFavourite={this.toggleFavourite}
+                />
             </div>
         )
     }
