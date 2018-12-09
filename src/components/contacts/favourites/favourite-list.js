@@ -2,6 +2,7 @@ import React from 'react'
 import ContactItem from '../contacts-item'
 
 function FavouriteList (props) {
+    console.log('dadad')
     const favouriteList = props.items
         .filter(item => item.favourite)
         .map((item) => 
