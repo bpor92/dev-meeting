@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import {withRouter} from 'react-router-dom';
 
 const Contact = withRouter(props => {
+    debugger
     let {
         favourite,
         name: {first},
@@ -21,6 +22,7 @@ const Contact = withRouter(props => {
             <span>{phone}</span>
             <span>{email}</span>
             <span onClick={props.click}>{!favourite ? `Add to favourite` : `Delete from favourite`}</span>
+            <span></span>
             <Link to={{ pathname: `/contacts/${uuid}`}}>Edit</Link>
         </div>
     )
